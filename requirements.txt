@@ -1,0 +1,7 @@
+click
+mock
+numpy>=1.11
+dm-sonnet==1.29
+tensorflow==1.12.0
+tensorflow-probability==0.6.0
+gym==0.10.9
