@@ -1,7 +1,7 @@
 # MARL-with-SQLoss
-=========================================
 
 ## Installation instructions:
+- Use the following commands to setup the virtual-env with the required packages.
 ```
 sudo apt-get install python3-pip
 sudo pip3 install virtualenv 
@@ -12,12 +12,12 @@ export LANG=C.UTF-8
 pip3 install -r requirements.txt
 ```
 
-You can also refer to the file `requirements-freezed.txt` to get the exact version of packages used for our experiments.
+- You can also refer to the file `requirements-freezed.txt` to get the exact version of packages used for our experiments.
 
 
 
 ## Execution Instructions
-- After installation, you can run the `IPD` experiment using the command below:
+- After the environment setup is complete, you can run the `IPD with SQLoss` experiment shown in the paper using the command below:
 ```
 python scripts/run_sqloss.py --exp_name=IPD --no-lola --no-exact --trials=1 --batch_size=200 --trace_length=200 --num_episodes=400000 --lr=1.0
 ```
@@ -31,7 +31,7 @@ python scripts/run_sqloss.py --exp_name=IPD --no-lola --no-exact --trials=1 --ba
 *Disclaimer:* This is a research code release that has not been tested beyond the use cases and experiments discussed in the original papers.
 
 ## Credits
-We use the code backbone provided by Learning with opponent leanrning awareness (LOLA) for our experiments,
+We use the code backbone provided by Learning with opponent leanrning awareness (LOLA) for our experiments.
 ```
 @inproceedings{foerster2018lola,
   title={Learning with opponent-learning awareness},
