@@ -13,13 +13,14 @@ pip3 install -r requirements.txt
 ```
 
 - You can also refer to the file `requirements-freezed.txt` to get the exact version of packages used for our experiments.
+- The code is *NOT* compatible with python2. Please use python3.
 
 
 
 ## Execution Instructions
 - After the environment setup is complete, you can run the `IPD with SQLoss` experiment shown in the paper using the command below:
 ```
-python scripts/run_sqloss.py --exp_name=IPD --no-lola --no-exact --trials=1 --batch_size=200 --trace_length=200 --num_episodes=400000 --lr=1.0
+python3 scripts/run_sqloss.py --exp_name=IPD --no-lola --no-exact --trials=1 --batch_size=200 --trace_length=200 --num_episodes=400000 --lr=1.0
 ```
 
 ## Logs
