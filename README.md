@@ -31,6 +31,10 @@ python3 scripts/run_sqloss.py --exp_name=IPD --no-lola --no-exact --trials=1 --b
 
 *Disclaimer:* This is a research code release that has not been tested beyond the use cases and experiments discussed in the original papers.
 
+## Additional Resources
+![resource1](resource1.png)
+![resource2](resource2.png)
+
 ## Credits
 We use the code backbone provided by Learning with opponent leanrning awareness (LOLA) for our experiments.
 ```
