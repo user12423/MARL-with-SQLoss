@@ -268,6 +268,7 @@ def train(env, *, num_episodes, trace_length, batch_size, gamma,
             if len(rList) % summaryLength == 0 and len(rList) != 0 and updated == True:
                 updated = False
                 gamma_discount = 1 / (1-gamma)
+                print("\nTotal Epochs: %d | Total Steps: %d" %(total_steps/(batch_size*trace_length), total_steps))
                 print(total_steps,'reward', np.mean(rList[-summaryLength:], 0)/gamma_discount, 'action', (np.mean(aList[-summaryLength:], 0)*2.0/ np.sum(np.mean(aList[-summaryLength:], 0)))*100//1)
 
 
