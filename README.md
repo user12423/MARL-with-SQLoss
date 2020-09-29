@@ -22,7 +22,7 @@ pip3 install -r requirements.txt
 ```
 python3 scripts/run_sqloss.py --exp_name=IPD --no-lola --no-exact --trials=1 --batch_size=200 --trace_length=200 --num_episodes=12000 --lr=1.0
 ```
-It would take around _25 minutes_ to finish the code execution and get the results using the default parameter settings.
+- It would take around _25 minutes_ to finish around 55 training epochs which is a hard stop based on the parameters above. If the code execution ends prematurely then consider increasing the `--num_episodes` param (200 episodes == 1 training epoch) to get the results.
 
 ## Logs
 - Logs are generated in the folder `logs/` for all the experiments.
