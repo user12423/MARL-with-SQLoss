@@ -36,18 +36,8 @@ python3 scripts/run_sqloss.py --exp_name=IPD --no-lola --no-exact --trials=1 --b
 ---
 
 ## Credits
-We use the code backbone provided by Learning with opponent leanrning awareness (LOLA) for our experiments.
-```
-@inproceedings{foerster2018lola,
-  title={Learning with opponent-learning awareness},
-  author={Foerster, Jakob and Chen, Richard Y and Al-Shedivat, Maruan and Whiteson, Shimon and Abbeel, Pieter and Mordatch, Igor},
-  booktitle={Proceedings of the 17th International Conference on Autonomous Agents and MultiAgent Systems},
-  pages={122--130},
-  year={2018},
-  organization={International Foundation for Autonomous Agents and Multiagent Systems}
-}
-```
+We use the code backbone provided by Learning with Opponent Learning Awareness (LOLA) for our experiments.
+
 
 ## License
-
 MIT
