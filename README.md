@@ -20,8 +20,9 @@ pip3 install -r requirements.txt
 ## Execution Instructions
 - After the environment setup is complete, you can run the `IPD with SQLoss` experiment shown in the paper using the command below:
 ```
-python3 scripts/run_sqloss.py --exp_name=IPD --no-lola --no-exact --trials=1 --batch_size=200 --trace_length=200 --num_episodes=400000 --lr=1.0
+python3 scripts/run_sqloss.py --exp_name=IPD --no-lola --no-exact --trials=1 --batch_size=200 --trace_length=200 --num_episodes=12000 --lr=1.0
 ```
+It would take around _25 minutes_ to finish the code execution and get the results using the default parameter settings.
 
 ## Logs
 - Logs are generated in the folder `logs/` for all the experiments.
