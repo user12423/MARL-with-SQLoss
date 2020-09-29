@@ -12,8 +12,8 @@ export LANG=C.UTF-8
 pip3 install -r requirements.txt
 ```
 
-- You can also refer to the file `requirements-freezed.txt` to get the exact version of packages used for our experiments.
-- The code is *NOT* compatible with python2. Please use python3.
+- You can also refer to the file `requirements-freezed.txt` to obtain the exact version of a package used for our experiments if there is any installation issue.
+- <ins>NOTE</ins>: The code is *NOT* compatible with python2. Please use python3.
 
 
 
