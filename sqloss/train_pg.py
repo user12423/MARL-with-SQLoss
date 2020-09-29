@@ -19,6 +19,7 @@ sticky_every = 10
 
 assert sticky_policy == False
 
+tf.set_random_seed(23424)
 
 def update(mainQN, lr, final_delta_1_v, final_delta_2_v):
     #pdb.set_trace()
