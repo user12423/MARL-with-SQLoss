@@ -40,4 +40,5 @@ We use the code backbone provided by Learning with Opponent Learning Awareness (
 
 
 ## License
-MIT
+Attribution-NonCommercial-ShareAlike 4.0 International
+
