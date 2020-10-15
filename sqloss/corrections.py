@@ -68,11 +68,11 @@ def corrections_func(mainPN, batch_size, trace_length,
         v_0 = 2 * tf.reduce_sum(v_0) / batch_size
         v_1 = 2 * tf.reduce_sum(v_1) / batch_size
 
-    ## Future state loss
+    ## Counter-Factual Term
     v_0_pi_0__past = 2*tf.reduce_sum(((mainPN[0].target_Avalue-tf.stop_gradient(mainPN[0].value)) * mainPN[0].gamma_array) * mainPN[0].log_pi_action_bs_t_past) / batch_size
     v_1_pi_1__past = 2*tf.reduce_sum(((mainPN[1].target_Avalue-tf.stop_gradient(mainPN[1].value)) * mainPN[1].gamma_array) * mainPN[1].log_pi_action_bs_t_past) / batch_size
 
-    ## Current state loss
+    ## Observed Reality Term
     v_0_pi_0__current = 2*tf.reduce_sum(((mainPN[0].target_Svalue-tf.stop_gradient(mainPN[0].value)) * mainPN[0].gamma_array) * mainPN[0].log_pi_action_bs_t) / batch_size
     v_1_pi_1__current = 2*tf.reduce_sum(((mainPN[1].target_Svalue-tf.stop_gradient(mainPN[1].value)) * mainPN[1].gamma_array) * mainPN[1].log_pi_action_bs_t) / batch_size
 
