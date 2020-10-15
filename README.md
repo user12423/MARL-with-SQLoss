@@ -1,4 +1,4 @@
-# MARL-with-SQLoss
+# Status-Quo Policy Gradient in MARL
 
 ## Installation instructions:
 - Use the following commands to setup the virtual-env with the required packages.
